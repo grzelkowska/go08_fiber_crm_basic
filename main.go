@@ -9,7 +9,6 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-
 func setupRoutes(app *fiber.App) {
 	app.Get("/api/v1/lead", lead.GetLeads)
 	app.Get("/api/v1/lead/:id", lead.GetLead)
